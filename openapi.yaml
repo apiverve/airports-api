@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: Airports Lookup
-  description: Airports is a simple tool for getting airport data. It returns the airport name, location, and more.
+  description: >-
+    Airports is a simple tool for getting airport data. It returns the airport
+    name, location, and more.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/airports:
     get:
       summary: Get Airport Info from IATA
-      description: Airports is a simple tool for getting airport data. It returns the airport name, location, and more.
+      description: Get the airport information for a specific airport IATA code
       operationId: airports
       parameters:
-      - name: iata
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The IATA code of the airport for which you want to get the information (e.g., MCI)
-        example: MCI
+        - name: iata
+          in: query
+          schema:
+            type: string
+          required: true
+          description: >-
+            The IATA code of the airport for which you want to get the
+            information (e.g., MCI)
+          example: MCI
       responses:
         '200':
           description: Successful Response
@@ -42,11 +46,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   icao: KMCI
                   iata: MCI
@@ -67,7 +71,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -75,4 +79,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
