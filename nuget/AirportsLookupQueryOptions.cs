@@ -12,7 +12,6 @@ namespace APIVerve.API.AirportsLookup
     {
         /// <summary>
         /// The IATA code of the airport for which you want to get the information (e.g., MCI)
-        /// Example: MCI
         /// </summary>
         [JsonProperty("iata")]
         public string Iata { get; set; }
