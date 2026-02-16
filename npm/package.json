@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/airports",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Airports is a simple tool for getting airport data. It returns the airport name, location, and more.",
   "main": "index.js",
   "types": "index.d.ts",
