@@ -230,8 +230,9 @@ from apiverve_airportslookup.apiClient import AirportsAPIClient
 
 api = AirportsAPIClient("[YOUR_API_KEY]")
 
+query = { "iata": "MCI" }
+
 try:
-    query = { "iata": "MCI" }
     result = api.execute(query)
     print(result)
 finally:
