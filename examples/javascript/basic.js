@@ -13,7 +13,12 @@ const API_URL = 'https://api.apiverve.com/v1/airports';
  */
 async function callAirportsLookupAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            iata: &#x27;MCI&#x27;
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
