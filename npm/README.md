@@ -7,7 +7,7 @@ Airports is a simple tool for getting airport data. It returns the airport name,
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/airports.svg)](https://www.npmjs.com/package/@apiverve/airports)
 
-This is a Javascript Wrapper for the [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source=npm&utm_medium=readme)
+This is a Javascript Wrapper for the [Airports Lookup API](https://airports.apiverve.com?utm_source=npm&utm_medium=readme)
 
 ---
 
