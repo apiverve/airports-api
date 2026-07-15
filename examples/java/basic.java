@@ -12,8 +12,12 @@ public class BasicExample {
         AirportsLookupAPIClient client = new AirportsLookupAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Query parameters
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;iata&quot;, &quot;MCI&quot;);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
