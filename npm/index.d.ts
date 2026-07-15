@@ -4,32 +4,44 @@ declare module '@apiverve/airports' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface airportsResponse {
     status: string;
     error: string | null;
     data: AirportsLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface AirportsLookupData {
-      icao:      string;
-      iata:      string;
-      name:      string;
-      city:      string;
-      state:     string;
-      country:   string;
-      elevation: number;
-      lat:       number;
-      lon:       number;
-      tz:        string;
+      icao:      null | string;
+      iata:      null | string;
+      name:      null | string;
+      city:      null | string;
+      state:     null | string;
+      country:   null | string;
+      elevation: number | null;
+      lat:       number | null;
+      lon:       number | null;
+      tz:        null | string;
       cityInfo:  CityInfo;
   }
   
   interface CityInfo {
-      name:    string;
-      altName: string;
-      country: string;
+      name:    null | string;
+      altName: null | string;
+      country: null | string;
   }
 
   export default class airportsWrapper {
