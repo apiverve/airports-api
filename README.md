@@ -191,11 +191,42 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Airports Lookup API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "icao": "KMCI",
+    "iata": "MCI",
+    "name": "Kansas City International Airport",
+    "city": "Kansas City",
+    "state": "Missouri",
+    "country": "US",
+    "elevation": 1026,
+    "lat": 39.2975997925,
+    "lon": -94.7138977051,
+    "tz": "America/Chicago",
+    "city_info": {
+      "name": "Kansas City",
+      "altName": "",
+      "country": "US"
+    }
+  }
 }
 ```
 
