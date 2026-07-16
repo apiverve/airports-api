@@ -25,6 +25,9 @@ namespace APIVerve.API.AirportsLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -48,13 +51,13 @@ namespace APIVerve.API.AirportsLookup
         public string Country { get; set; }
 
         [JsonProperty("elevation")]
-        public long Elevation { get; set; }
+        public long? Elevation { get; set; }
 
         [JsonProperty("lat")]
-        public double Lat { get; set; }
+        public double? Lat { get; set; }
 
         [JsonProperty("lon")]
-        public double Lon { get; set; }
+        public double? Lon { get; set; }
 
         [JsonProperty("tz")]
         public string Tz { get; set; }
@@ -73,5 +76,17 @@ namespace APIVerve.API.AirportsLookup
 
         [JsonProperty("country")]
         public string Country { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
