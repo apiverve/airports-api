@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Airports Lookup
   description: >-
-    Airports is a simple tool for getting airport data. It returns the airport
-    name, location, and more.
+    Airports Lookup resolves 3-letter IATA codes into official airport names,
+    matching ICAO codes, cities, states, and country codes. Paid plans add ICAO
+    code lookups, geographic coordinates, elevation, and local timezones across
+    more than 40,000 facilities.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/airports:
     get:
-      summary: Get Airport Info from IATA
+      summary: Airports Lookup
       description: Get the airport information for a specific airport IATA code
       operationId: airports
       parameters:
