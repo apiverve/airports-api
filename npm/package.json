@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/airports",
-  "version": "1.2.0",
-  "description": "Airports is a simple tool for getting airport data. It returns the airport name, location, and more.",
+  "version": "1.2.2",
+  "description": "Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "airports", "airport data", "airport lookup", "airport api", "airport data api"
+    "airport api", "airport codes api", "airport data api", "airport database api", "airport iata codes api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/airports-api/issues"
   },
-  "homepage": "https://airports.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/airports?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
