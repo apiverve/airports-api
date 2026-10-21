@@ -1,6 +1,6 @@
 # Airports Lookup API - PHP Package
 
-Airports is a simple tool for getting airport data. It returns the airport name, location, and more.
+Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.
 
 ## Installation
 
@@ -95,11 +95,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airports?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airports?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://airports.apiverve.com?utm_source=php&utm_medium=readme](https://airports.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/airports?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/airports?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
