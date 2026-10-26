@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/airports",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.",
   "main": "index.js",
   "types": "index.d.ts",
