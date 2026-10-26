@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Airports Lookup API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [iata] (required) - The IATA code of the airport for which you want to get the information (e.g., MCI)

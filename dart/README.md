@@ -1,11 +1,11 @@
 # Airports Lookup API - Dart/Flutter Client
 
-Airports is a simple tool for getting airport data. It returns the airport name, location, and more.
+Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_airports.svg)](https://pub.dev/packages/apiverve_airports)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_airports: ^1.1.14
+  apiverve_airports: ^1.2.3
 ```
 
 Then run:
@@ -73,12 +73,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/airports](https://docs.apiverve.com/ref/airports?utm_source=dart&utm_medium=readme)
+- **API Home:** [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/airports](https://docs.apiverve.com/ref/airports?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -86,4 +86,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
