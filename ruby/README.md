@@ -1,6 +1,6 @@
 # Airports Lookup API - Ruby Gem
 
-Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.
+Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, country codes and country names. Paid plans add ICAO code lookups, search by airport name or city, geographic coordinates, elevation, local timezones and the current UTC offset across more than 29,000 facilities.
 
 ## Installation
 
@@ -83,6 +83,8 @@ client = APIVerve::Airports::Client.new(
     "lat": 39.2975997925,
     "lon": -94.7138977051,
     "tz": "America/Chicago",
+    "country_name": "United States",
+    "utc_offset": "-06:00",
     "city_info": {
       "name": "Kansas City",
       "altName": "",
