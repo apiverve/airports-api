@@ -25,17 +25,19 @@ declare module '@apiverve/airports' {
 
 
   interface AirportsLookupData {
-      icao:      null | string;
-      iata:      null | string;
-      name:      null | string;
-      city:      null | string;
-      state:     null | string;
-      country:   null | string;
-      elevation: number | null;
-      lat:       number | null;
-      lon:       number | null;
-      tz:        null | string;
-      cityInfo:  CityInfo;
+      icao:        null | string;
+      iata:        null | string;
+      name:        null | string;
+      city:        null | string;
+      state:       null | string;
+      country:     null | string;
+      elevation:   number | null;
+      lat:         number | null;
+      lon:         number | null;
+      tz:          null | string;
+      countryName: null | string;
+      utcOffset:   null | string;
+      cityInfo:    CityInfo;
   }
   
   interface CityInfo {
