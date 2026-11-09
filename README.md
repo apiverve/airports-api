@@ -1,6 +1,6 @@
 # [Airports Lookup API](https://apiverve.com/marketplace/airports?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.
+Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, country codes and country names. Paid plans add ICAO code lookups, search by airport name or city, geographic coordinates, elevation, local timezones and the current UTC offset across more than 29,000 facilities.
 
 The Airports Lookup API provides a simple, reliable way to integrate airports lookup functionality into your applications. Built for developers who need production-ready airports lookup capabilities without the complexity of building from scratch.
 
@@ -221,6 +221,8 @@ A real response from the Airports Lookup API:
     "lat": 39.2975997925,
     "lon": -94.7138977051,
     "tz": "America/Chicago",
+    "country_name": "United States",
+    "utc_offset": "-06:00",
     "city_info": {
       "name": "Kansas City",
       "altName": "",
