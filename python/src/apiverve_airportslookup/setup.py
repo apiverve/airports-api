@@ -10,11 +10,11 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_airportslookup',
-    version='1.2.4',
+    version='1.2.5',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, and country codes. Paid plans add ICAO code lookups, geographic coordinates, elevation, and local timezones across more than 40,000 facilities.',
+    description='Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, country codes and country names. Paid plans add ICAO code lookups, search by airport name or city, geographic coordinates, elevation, local timezones and the current UTC offset across more than 29,000 facilities.',
     author='APIVerve',
     author_email='hello@apiverve.com',
     url='https://apiverve.com/marketplace/airports?utm_source=pypi&utm_medium=referral&utm_content=homepage',
