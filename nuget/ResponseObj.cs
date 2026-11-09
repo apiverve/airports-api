@@ -62,6 +62,12 @@ namespace APIVerve.API.AirportsLookup
         [JsonProperty("tz")]
         public string Tz { get; set; }
 
+        [JsonProperty("country_name")]
+        public string CountryName { get; set; }
+
+        [JsonProperty("utc_offset")]
+        public string UtcOffset { get; set; }
+
         [JsonProperty("city_info")]
         public CityInfo CityInfo { get; set; }
     }
