@@ -66,6 +66,8 @@ class AirportsData {
   num? lat;
   num? lon;
   String? tz;
+  String? countryName;
+  String? utcOffset;
   AirportsDataCityInfo? cityInfo;
 
   AirportsData({
@@ -79,6 +81,8 @@ class AirportsData {
     this.lat,
     this.lon,
     this.tz,
+    this.countryName,
+    this.utcOffset,
     this.cityInfo,
   });
 
@@ -93,6 +97,8 @@ class AirportsData {
       lat: json['lat'],
       lon: json['lon'],
       tz: json['tz'],
+      countryName: json['country_name'],
+      utcOffset: json['utc_offset'],
       cityInfo: json['city_info'] != null ? AirportsDataCityInfo.fromJson(json['city_info']) : null,
     );
 }
