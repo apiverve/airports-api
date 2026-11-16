@@ -1,6 +1,6 @@
 # Airports Lookup API - Dart/Flutter Client
 
-Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, country codes and country names. Paid plans add ICAO code lookups, search by airport name or city, geographic coordinates, elevation, local timezones and the current UTC offset across more than 29,000 facilities.
+Airports Lookup resolves 3-letter IATA codes into official airport names, matching ICAO codes, cities, states, country codes and country names. Paid plans add ICAO code lookups, search by airport name or city, the nearest airports to a latitude and longitude, geographic coordinates, elevation, local timezones and the current UTC offset across more than 29,000 facilities.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_airports.svg)](https://pub.dev/packages/apiverve_airports)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_airports: ^1.2.5
+  apiverve_airports: ^1.2.6
 ```
 
 Then run:
